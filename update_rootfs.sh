@@ -71,7 +71,7 @@ else
 fi
 
 guestfish --remote \
-	upload "$VMLINUX" "/boot/vmlinux" : \
+	upload "./$VMLINUX" "/boot/vmlinux" : \
 	chmod 644 "/boot/vmlinux"
 
 guestfish --remote \

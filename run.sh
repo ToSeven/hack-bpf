@@ -18,7 +18,7 @@ VMLINUZ=linux/"$(make -C linux -s image_name)"
 VMLINUX=linux/vmlinux
 
 MAX_CPU=${MAX_CPU:-$(nproc)}
-GDB=${GDB:-0}
+GDB=${GDB:-1}
 
 echo "Starting VM with $(nproc) CPUs..."
 
